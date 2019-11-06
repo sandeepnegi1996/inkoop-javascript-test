@@ -7,3 +7,9 @@ body {
   background-color: darkcyan;
   color: black;
 }
+
+#gen {
+  background-color: coral;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
