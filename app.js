@@ -14,12 +14,15 @@ function randomText() {
 
 function refershingText() {
   console.log("checking");
+  var count = 5;
+  var refreshInterval = setInterval(function(params) {
+    if (count == 0) {
+      clearInterval(refreshInterval);
+    }
 
-  for (let index = 0; index <= 5; index++) {
-    setInterval(function() {
-      refershing.innerHTML = "Refreshing in " + index + " Seconds";
-    }, 1000);
-  }
+    refershing.innerHTML = "Refreshing in " + count + " seconds";
+    count--;
+  }, 1000);
 }
 function main() {
   generateSelector.addEventListener("click", function() {
